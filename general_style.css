@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #636363;
+    font-size: 1em;
+}
+
+main {
+    color: white;
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+header a{
+    display: block;
+    background-color: #FF0080;
+    padding: 0.5em 0.8em 0.5em 0.8em;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'PlayFair Display',serif;
+    letter-spacing: 0.6em;
+    word-spacing: 1em;
+    font-size: 2em;
+}
+
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+    nav ul li {
+        float: left;
+        font-family: 'PlayFair Display',serif;
+        font-size: 1.5em;
+        letter-spacing: 0.08em;
+    }
+
+        nav ul li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            /* Change the link color to #111 (black) on hover */
+            nav ul li a:hover {
+                background-color: #ff5bad;
+            }
+
+.active {
+    background-color: #FF0080;
+}
+
+em {
+    font-style: italic;
+}
+
+.warnings {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.4rem;
+    font-size: 1.7rem;
+    background-color: #999999;
+    text-align: center;
+}
+
+.button {
+    background: linear-gradient(to bottom right, #FF0080 0%, #FF5BAD 100%);
+    border: none;
+    color: white;
+    padding: 0.75em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 1.6em;
+    cursor: pointer;
+    position: fixed;
+    bottom: 2em;
+    left: 1.3em;
+    width: 20px;
+    opacity: 0.9;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+}
+
+@media all and (max-width: 580px) {
+    nav ul li {
+        width: 100%;
+    }
+
+        nav ul li a {
+            display: block;
+        }
+}
+
+@media all and (max-width: 450px) {
+    header a {
+        font-size: 4vw;
+    }
+}

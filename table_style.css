@@ -1,0 +1,45 @@
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #FFF;
+	caption-side: bottom;
+}
+
+.table th, .table td {
+	width: 25%;
+        text-align:center;
+	border: 1px solid #FFF;
+        border-collapse:collapse;
+	padding: 5px;
+}
+
+.table caption {
+	background-color: black;
+	color: white;
+}
+
+.table th {
+	background-color: gray;
+        border: 1px solid #FFF;
+}
+
+.table tfoot{
+	text-align: center;
+}
+
+.table td, .table th {
+	border-style: solid;
+	
+}
+
+@media all and (max-width: 750px) {
+    .table{
+        font-size:2vw;
+    }
+}
+
+ /*zebra*/
+tr:nth-child(odd) { background-color: #FF0080;}
+tr:nth-child(even){ background-color: #515151;}
+
+

@@ -1,0 +1,75 @@
+main {
+    margin-top: 3em;
+}
+
+article img {
+    display: table-cell;
+}
+
+#box {
+    height: 317px;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 1em;
+}
+
+article {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    overflow: hidden;
+    display: table;
+}
+
+blockquote {
+    width: 80%;
+    background: #515151;
+    border-left: 10px solid #FF0080;
+    text-align: center;
+    padding: 0.5em 1em;
+    quotes: "\201C""\201D""\2018""\2019";
+    margin: 3em auto;
+}
+
+    blockquote:before {
+        color: #FF0080;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+    }
+
+    blockquote:after {
+        color: #FF0080;
+        content: close-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-left: 0.25em;
+        vertical-align: -0.6em;
+    }
+
+    blockquote p {
+        color: white;
+        display: inline-block;
+    }
+
+p em {
+    color: #ff5bad;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #adb7bd;
+}
+
+@media all and (max-width: 580px) {
+    article {
+        display: initial;
+    }
+
+        article img {
+            margin: auto;
+        }
+}

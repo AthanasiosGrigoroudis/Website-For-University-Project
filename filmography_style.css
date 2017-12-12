@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+main {
+    height: 80vh;
+    color: white;
+    margin: 2em auto;
+    width: 90%;
+}
+
+h2 {
+    font-family: 'PlayFair Display', serif;
+    line-height: 1.25;
+    margin: 0 0 1em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+article {
+    padding: 2em;
+    font-family: 'PlayFair Display', serif;
+    margin: 1em;
+    letter-spacing: 0.05em;
+    background: #515151;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+}
+
+    article:nth-of-type(3) {
+        flex: 2;
+    }
+
+article {
+    flex: 1 700px;
+}
+
+    article:nth-of-type(3) {
+        flex: 2 700px;
+    }
+
+@media all and (max-width: 580px) {
+    h2 {
+        font-size: 6vw;
+    }
+
+    article {
+        font-size: 3vw;
+    }
+}

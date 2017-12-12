@@ -1,0 +1,54 @@
+﻿main a {
+    text-decoration: none;
+    color: white;
+    background-color: #eeeeee;
+}
+
+.contact {
+    max-width: 20em;
+    margin: auto;
+    width: 95%;
+}
+
+.contact_interior {
+    margin: 2em auto;
+    padding: 0.7em;
+    text-align: left;
+    font-size: 1em;
+    overflow: hidden;
+    display: table;
+    table-layout: fixed;
+    font-size: 1em;
+}
+
+    .contact_interior:hover {
+        background-color: rgb(25,25,25);
+        background-color: rgba(255,255,255,0.1);
+    }
+
+    .contact_interior p {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    .contact_interior img {
+        float: left;
+        margin: 0 0.5em 0 0;
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    .contact_interior em {
+        color: #ff5bad;
+        font-style: normal;
+        font-weight: 500;
+        padding-bottom: 0.002em;
+        border-bottom: 1px solid #ff5bad;
+    }
+
+@media all and (max-width: 430px) {
+    .contact_interior p {
+        font-size: 4.5vw;
+    }
+}
